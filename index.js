@@ -1,17 +1,5 @@
 import { program } from 'commander';
-// import yargs from 'yargs';
-// import { hideBin } from 'yargs/helpers';
 import contacts from './contacts.js';
-
-
-
-//second variant
-// const arr = hideBin(process.argv);
-// const {argv} = yargs(arr);
-
-
-
-
 
 const invokeAction = async ({action, id, name, email, phone}) => {
     switch (action) {
@@ -53,16 +41,3 @@ const argv = program.opts();
 
 invokeAction(argv)
 
-//second variant
-// invokeAction(argv)
-
-
-//first variant
-// const actionIndex = process.argv.indexOf("--action");
-
-// if (actionIndex !== -1) {
-//   const action = process.argv[actionIndex + 1];
-//   invokeAction({ action });
-// }
-
-// invokeAction(argv);

@@ -27,8 +27,6 @@ const getContactById = async (id) => {
   const contacts = await listContacts();
   const result = contacts.find((item) => item.id === id);
   return result;
-  // const result = await fs.writeFile(contactsPath, { id, name, email, phone })
-  // return result
 };
 
 const removeContact = async (id) => {
